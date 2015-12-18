@@ -1,0 +1,19 @@
+{
+  "name": "nspc",
+  "description": "simplest namespace generator",
+  "version": "0.0.0",
+  "author": "Nao Yonamine <mohayonao@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/mohayonao/nspc/issues"
+  },
+  "homepage": "http://mohayonao.github.io/nspc/",
+  "keywords": [
+    "namespace"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/mohayonao/nspc.git"
+  }
+}
