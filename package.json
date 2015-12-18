@@ -6,6 +6,11 @@
   "bugs": {
     "url": "https://github.com/mohayonao/nspc/issues"
   },
+  "files": [
+    "package.json",
+    "README.md",
+    "index.js"
+  ],
   "homepage": "http://mohayonao.github.io/nspc/",
   "keywords": [
     "namespace"
@@ -15,5 +20,9 @@
   "repository": {
     "type": "git",
     "url": "http://github.com/mohayonao/nspc.git"
+  },
+  "scripts": {
+    "test": "node test",
+    "travis": "npm run test"
   }
 }
