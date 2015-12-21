@@ -1,5 +1,6 @@
 var assert = require("assert");
 var nspc = require("../");
+var nspcGlobal = require("../global");
 var wmap = new WeakMap();
 
 assert(
@@ -23,4 +24,10 @@ assert(
 assert(
   nspc("Generic", nspc("System.Collections")) === nspc("Collections.Generic", nspc("System")),
   "receive the specific root space object"
+);
+
+assert(
+  typeof global.System === "undefined" &&
+  nspcGlobal("System.Collections.Generic") === global.System.Collections.Generic,
+  "global namespace"
 );
