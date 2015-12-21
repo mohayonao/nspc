@@ -32,8 +32,19 @@ with root object
 
 ```js
 const nspc = require("nspc");
+const target = {};
 
-const Collections = nspc("System.Generic.Collections", global);
+const Collections = nspc("System.Generic.Collections", target);
+
+assert.deepEqual(target.System.Generic.Collections, {});
+```
+
+global namespace
+
+```js
+const nspc = require("nspc/global");
+
+const Collections = nspc("System.Generic.Collections");
 
 assert.deepEqual(global.System.Generic.Collections, {});
 ```
