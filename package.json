@@ -1,15 +1,16 @@
 {
   "name": "nspc",
   "description": "simplest namespace generator",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "Nao Yonamine <mohayonao@gmail.com>",
   "bugs": {
     "url": "https://github.com/mohayonao/nspc/issues"
   },
   "files": [
+    "global.js",
+    "index.js",
     "package.json",
-    "README.md",
-    "index.js"
+    "README.md"
   ],
   "homepage": "http://mohayonao.github.io/nspc/",
   "keywords": [
